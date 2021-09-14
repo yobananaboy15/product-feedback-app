@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
 }
+
+body {
+  background-color: #f2f4ff;
+}
