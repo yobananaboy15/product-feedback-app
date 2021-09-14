@@ -5,8 +5,5 @@ type FilterbuttonProps = {
     filterText: string
 }
 
-export const FilterButton = ({filterText}: FilterbuttonProps) => {
-    return (
-        filterText === 'All' ? <AllButton>{filterText}</AllButton> : <Button>{filterText}</Button> 
-    )
-}
+export const FilterButton = ({filterText}: FilterbuttonProps) => filterText === 'All' ? <AllButton>{filterText}</AllButton> : <Button>{filterText}</Button>     
+
