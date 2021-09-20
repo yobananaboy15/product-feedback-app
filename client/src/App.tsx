@@ -1,8 +1,8 @@
-import { Container } from './components/Container/Container';
+import { AppContainer } from './components/AppContainer/AppContainer';
 
 function App() {
   return (
-    <Container />
+    <AppContainer />
   );
 }
 
