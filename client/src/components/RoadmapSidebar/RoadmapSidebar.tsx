@@ -1,13 +1,15 @@
 import React from 'react'
 import * as S from './styles'
-import { RoadmapLink } from '../RoadmapSidebarTitle/RoadmapSidebarTitle'
+import { RoadmapSidebarTitle } from '../RoadmapSidebarTitle/RoadmapSidebarTitle'
+import { RoadmapSidebarStatus } from '../RoadmapSidebarStatus/RoadmapSidebarStatus'
 
 export const RoadmapSidebar = () => {
     return (
         <S.Container>
-            <RoadmapLink/>
-            <div>View</div>
-            <div>3</div>
+            <RoadmapSidebarTitle/>
+            <RoadmapSidebarStatus status="Planned" color="#F49F85"/>
+            <RoadmapSidebarStatus status="In-Progress" color="#AD1FEA"/>
+            <RoadmapSidebarStatus status="Live" color="#62BCFA"/>
         </S.Container>
     )
 }

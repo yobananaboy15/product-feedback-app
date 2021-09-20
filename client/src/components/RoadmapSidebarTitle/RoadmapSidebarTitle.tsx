@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 
-export const RoadmapLink = () => {
+export const RoadmapSidebarTitle = () => {
     return (
         <S.Container>
             <S.Title>Roadmap</S.Title>

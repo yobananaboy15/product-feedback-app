@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template: 1fr / 2fr 1fr;
+  grid-template: 1fr / 1fr auto;
+  margin-bottom: 2.4rem;
 `;
 
 export const Title = styled.h3`
@@ -15,5 +16,5 @@ export const RoadmapLink = styled.a`
   font-size: 1.3rem;
   font-weight: 600;
   color: #4661e6;
-  place-self: center end;
+  place-self: center;
 `;
