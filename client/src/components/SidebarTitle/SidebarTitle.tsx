@@ -1,14 +1,13 @@
-import React from 'react'
-import { Container, TitleContainer, Title, Subtitle } from './styles'
+import * as S from './styles'
 
 export const SidebarTitle = () => {
     return (
-        <Container>
-            <TitleContainer>
-                <Title>Frontend Mentor</Title>
-                <Subtitle>Feedback Board</Subtitle>
-            </TitleContainer>
+        <S.Container>
+            <S.TitleContainer>
+                <S.Title>Frontend Mentor</S.Title>
+                <S.Subtitle>Feedback Board</S.Subtitle>
+            </S.TitleContainer>
             
-        </Container>
+        </S.Container>
     )
 }

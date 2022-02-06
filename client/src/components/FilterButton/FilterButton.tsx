@@ -1,4 +1,3 @@
-import React from 'react'
 import * as S from './styles'
 import {filters} from '../SuggestionFilter/SuggestionsFilter';
 
@@ -9,6 +8,10 @@ type FilterbuttonProps = {
 }
 export const FilterButton = ({filterText, selected, callback}: FilterbuttonProps) => {
 
-    return selected ? <S.FilterButtonSelected>{filterText}</S.FilterButtonSelected> : <S.FilterButton onClick={() => callback(filterText)}>{filterText}</S.FilterButton>
+    if (selected) {
+        return <S.FilterButtonSelected>{filterText}</S.FilterButtonSelected>  
+    }
+
+    return <S.FilterButton onClick={() => callback(filterText)}>{filterText}</S.FilterButton>
 }     
 

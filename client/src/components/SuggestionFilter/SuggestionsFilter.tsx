@@ -1,23 +1,24 @@
-import React, {useContext, useCallback} from 'react'
-import { FilterContainer } from './styles'
+import React, {useContext} from 'react'
+import * as S from './styles'
 import { FilterButton } from '../FilterButton/FilterButton'
 import {FilterContext} from '../../context/FilterProvider';
 
 export const filters = ["All", "UI", "UX", "Enhancement", "Bug", "Feature"] as const
 
+type validFilter = typeof filters[number]
 
 export const SuggestionsFilter = () => {
     const {filterValue, setFilterValue} = useContext(FilterContext)
     
-    const selectFilter = useCallback((value) => {
+    const selectFilter = (value: validFilter) => {
         setFilterValue(value);
-    }, [setFilterValue])
+    }
 
     return (
-        <FilterContainer>
+        <S.FilterContainer>
             {filters.map(filter => {
                 return <FilterButton filterText={filter} selected={filter === filterValue} callback={selectFilter}/>
             })}            
-        </FilterContainer>
+        </S.FilterContainer>
     )
 }
