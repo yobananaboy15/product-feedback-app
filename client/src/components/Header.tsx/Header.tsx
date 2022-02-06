@@ -1,9 +1,11 @@
 import * as S from './styles';
 
-export const MainHeader = () => {
+export const Header = () => {
     return (
-        <div>
-            
-        </div>
+        <S.Container>
+            <S.Suggestions>
+                6 Suggestions
+            </S.Suggestions>
+        </S.Container>
     )
 }

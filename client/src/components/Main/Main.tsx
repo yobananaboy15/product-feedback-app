@@ -1,7 +1,10 @@
+import { Header } from "../Header.tsx/Header"
+
+
 export const Main = () => {
     return (
         <div>
-            <div>test</div>
+            <Header />
             <div>test</div>
             <div>test</div>
         </div>
