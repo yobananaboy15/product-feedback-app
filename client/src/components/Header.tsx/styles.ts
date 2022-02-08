@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { getFontStyle } from "../../theme/typography";
 
 export const Container = styled.div`
   display: flex;
@@ -7,8 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Suggestions = styled.div`
-  font-weight: 700;
-  font-size: 1.8rem;
+  ${getFontStyle('stockholm')}
 `
 
 
