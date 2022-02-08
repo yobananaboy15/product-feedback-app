@@ -6,7 +6,7 @@ type FontObject = {
 }
 
 type FontStyles = {
-  [nameProperty: string] : FontObject;
+  [key: string] : FontObject;
 }
 
 const fontStyles: FontStyles = {

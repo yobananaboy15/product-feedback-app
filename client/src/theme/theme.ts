@@ -1,1 +1,2 @@
-export {};
+import { getFontStyle } from "./typography";
+export { getFontStyle };
