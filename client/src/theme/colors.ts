@@ -9,5 +9,5 @@ const colors : Colors = {
 
 
 export const getColor = (colorName: keyof typeof colors, alphaValue?: number) => {
-  return `${alphaValue ? alphaValue.toString(16) : ''}${colorName}`
+  return `${alphaValue ? alphaValue.toString(16) : ''}${colorName};`
 }
